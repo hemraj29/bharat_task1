@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c5dce6a1b0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="Images/logo.png" class="logo" width="200px"> -->
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li> <a href="#portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Web Developer </p>
+                <h1>Hi, I am <span>Hemraj</span></br> Yadav from India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.jpeg" width="320px">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me </h1>
+                    <p>Basically residing from the state UTTARKHAND, (INDIA) which is also known as 'Land of Gods' . 
+                       I finished my schooling from Aryaman Vikram Birla Institute of Learning in year 2020.Now i am pursuing my degree form 
+                       mahatama jyotiba phule Rohilkhand University Bareilly.
+                       My hobbies are to binge through geopolitical issues tensing around the world and love to travel across states.
+                       Along side this developed good communication skill which would be a handy tool for me in this sector .
+                       I am eager to hear about potential career opportunities, so I would be pleased to chat about job openings in the IT sphere.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+                        <p class="tab-links" onclick="opentab('experience')"> Experience </p>
+                        <p class="tab-links" onclick="opentab('education')"> Education </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>Python Programming with OOPS Concept</li>
+                            <li><span>Web Developer</span><br>Web app development</li>
+                            <li><span>Front End Developer</span><br>Front end app development</li>
+                            <li><span>Full Stack Web Developer</span><br>Full-Stack app development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>20 November 2022 - 22 December 2022</span><br>Learned Python from Google via Coursera Platform and got certified by Goggle</li>
+                            <li><span>30 January 2023 - 12 March 2023</span><br>Full-Stack Web Development Internship from NullClass</li>
+                            <li><span>1 April 2023 - 1 May 2023</span><br>Web Development Internship from The Sparks Foundation</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>April 2017 - April 2018</span><br> Completed Senior Secondary School with grade of 77% in PCM(Science) from Aryaman Vikram Birla Institute of Learning(Uttarakhand)</li>
+                            <li><span> August 2018 - July 2022</span><br> Completed my graduation on B.Tech (Computer Science and Engineering) with grade of 73% from Maharishi Dayanand University(Haryana) </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Services </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> Full Stack Web Development </h2>
+                    <p> As a Full Stack Development intern, I had the opportunity to develop a website similar to Stack Overflow for asking and answering programming language-related questions.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2> Python Programming </h2>
+                    <p> Learned Python concepts and has a good understanding of it that I have gained through Goggle Crash Course on Python.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> Web Development </h2>
+                    <p> As a Web Development intern, I had the opportunity to develop a website on Basic Banking System which is able to produce transaction and transaction history.</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work-1.png">
+                    <div class="layer">
+                        <h3> Stack Overflow Clone</h3>
+                        <p> This is Stack Overflow Clone app that allows us to ask programming related questions & have deployed it using Netlify. </p>
+                        <!-- <a href="https://stack-overflow-sahil-upadhyay.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                    </div>
+                    
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.png">
+                    <div class="layer">
+                        <h3> Face-recognition </h3>
+                        <p> This is Face-recognition system app which indentifies user images.</p>
+                        <!-- <a href="https://github.com/Sahil-Upadhyay/Face-Recognition-Attendance-app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                    </div>
+                    
+                </div>
+                <div class="work">
+                    <img src="Images/work-3.png">
+                    <div class="layer">
+                        <h3> Poll App </h3>
+                        <p> This is Django Poll App for making understanding of Polls much easier and enjoyable.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <a href="#" class="btn"> See More </a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me </h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> hemrajyadav917@gmail.com </p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i>9555979213</p>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/Sahilupadhyay5"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/sahil-upadhyay-604a26203/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/hemraj29"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Images/up_cv.pdf" download class="btn btn2"> Download Resume </a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright &#169; Hemraj </p>
+        </div>
+    </div>
+    <script>
+         
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwY_21f5ysQ1l-SZgWJNICb7KCc8NzsdfdeIx4GvwSsua1WqSKDcq9h6kNXkS3CtaA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message send successfully!!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
